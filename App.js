@@ -30,10 +30,6 @@ const styles = StyleSheet.create({
     borderBottomWidth: 3,
     borderColor: 'rgba(0.0,0.0,0.0,0.2)',
   },
-  scroll: {
-    //maxHeight: '20',
-    //height: 40,
-  },
   scrollContainer: {
     height: 150,
   },
@@ -72,30 +68,6 @@ const Login = (props: LoginProps) => {
     </View>
   );
 };
-/*
-type CatProps = {
-  name: string;
-};
-
-const Cat = (props: CatProps) => {
-  const [isHungry, setIsHungry] = useState(true);
-
-  return (
-    <View style={styles.container}>
-      <Text>
-        I am {props.name}, and I am {isHungry ? 'hungry' : 'full'}!
-      </Text>
-      <Button
-        onPress={() => {
-          setIsHungry(!isHungry);
-        }}
-        //disabled={!isHungry}
-        title={isHungry ? 'Pour me some milk, please!' : 'Thank you!'}
-      />
-    </View>
-  );
-};
-*/
 
 const SignInDemo = () => {
   const [loginData, onChangeLoginData] = React.useState({});
